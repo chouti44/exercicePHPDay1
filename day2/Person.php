@@ -3,23 +3,23 @@
         private $firstName;
         private $lastName;
 
-        public function getFirstName():String {
+        public function getFirstName():string {
             return $this->firstName;
         }
 
-        public function setFirstName($firstName) {
+        public function setFirstName(string $firstName) {
             $this->firstName = $firstName;
         }
 
-        public function getLastName():String  {
+        public function getLastName():string  {
             return $this->lastName;
         }
 
-        public function setLastName($lastName) {
+        public function setLastName(string $lastName) {
             $this->lastName = $lastName;
         }
 
-        public function display():String  {
+        public function display():string  {
             return 'Hello ' . $this->firstName . ' ' . $this->lastName;
         }
     }
