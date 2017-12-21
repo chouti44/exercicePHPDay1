@@ -3,6 +3,8 @@
         private $pointAttack;
         private $arms;
 
+        //__construct for var
+
         public function getPointAttack() {
             return $this->pointAttack;
         }

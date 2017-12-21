@@ -6,12 +6,13 @@ require 'Combat.php';
 require 'Arms.php';
 
 $combat = new Combat();
-
 $viking = new Viking();
 
+//object Arms a paramater with name and pa
 $arms = new Arms();
 
 $viking->setName("Boby");
+// not string but objet Arms
 $viking->setArme("Hache");
 $vikingArm = $viking->getArme();
 $arms->addArms($vikingArm);
