@@ -1,19 +1,5 @@
 <?php
     session_start();
-
-    require 'User.php';
-
-    // instantiate object User
-    $user1 = new User();
-
-    // Set parameters of object User
-    $user1->setFirstName('John');
-    $user1->setLastName('Doe');
-    $user1->setEmail('john.doe@domain.tld');
-    $user1->setPassword('mdpsupersecure');
-
-    // Add user1 in session;
-    $_SESSION['user1'] = $user1;
 ?>
 <!doctype html>
 <html lang="en">
