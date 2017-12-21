@@ -31,7 +31,7 @@
         <input type="text" name="email" id="email"/>
         <br/><br/>
         <label for="password">Your password:</label>
-        <input type="text" name="password" id="password"/>
+        <input type="password" name="password" id="password"/>
         <br/><br/>
         <input type="submit" name="submit" value="Go"/>
     </form>
