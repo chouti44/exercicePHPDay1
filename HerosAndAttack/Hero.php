@@ -62,32 +62,42 @@ class Hero
         $this->pv = $pv;
     }
 
-    public function getAttaque(): int
+    /**
+     * @return mixed
+     */
+    public function getAttaque()
     {
         return $this->attaque;
     }
 
-    public function setAttaque(int $attaque)
+    /**
+     * @param mixed $attaque
+     */
+    public function setAttaque($attaque)
     {
         $this->attaque = $attaque;
     }
 
-    public function getDefence(): int
+    /**
+     * @return mixed
+     */
+    public function getDefence()
     {
         return $this->defence;
     }
 
-    public function setDefence(int $defence)
+    /**
+     * @param mixed $defence
+     */
+    public function setDefence($defence)
     {
         $this->defence = $defence;
     }
 
-    public function attack(Hero $player) {
-        // add parameter pv and think a setter
-        $player->pv -= $this->getAttaque();
-        var_dump($player->pv);
-
-        return $player->pv;
+    public function attaque($pa) {
+        var_dump($this->getName());
+        $this->setPv($this->getPv() - ($pa - $this->getDefence()));
+        var_dump($this->getPv());
+        var_dump($this->getDefence());
     }
-
 }
